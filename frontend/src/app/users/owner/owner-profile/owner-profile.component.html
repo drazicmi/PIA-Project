@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="owner-profile.component.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-4">
+  <h2>Owner Profile</h2>
+
+  <div class="row">
+    <!-- Profile Display Section -->
+    <div class="col-md-4">
+      <div class="profile-picture-section">
+        <img [src]="profilePictureUrl" class="profile-picture" alt="Profile Picture" *ngIf="profilePictureUrl">
+      </div>
+    </div>
+
+    <div class="col-md-8">
+      <div class="profile-info">
+        <!-- Display Owner Information -->
+        <p><strong>First Name:</strong> {{ owner.firstname }}</p>
+        <p><strong>Last Name:</strong> {{ owner.lastname }}</p>
+        <p><strong>Address:</strong> {{ owner.address }}</p>
+        <p><strong>Email Address:</strong> {{ owner.email }}</p>
+        <p><strong>Contact Phone Number:</strong> {{ owner.contactPhone }}</p>
+        <p><strong>Credit Card Number:</strong> {{ owner.creditCardNumber }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Title for Form Section -->
+  <div class="row mt-4">
+    <div class="col-md-12">
+      <h3>Change Information</h3>
+    </div>
+  </div>
+
+  <!-- Form Section to Update Profile -->
+  <div class="row mt-2">
+    <div class="col-md-12">
+      <form (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+        <!-- First Name -->
+        <div class="form-group">
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" class="form-control" [(ngModel)]="updatedOwner.firstname" name="firstname" placeholder="Enter new first name">
+        </div>
+
+        <!-- Last Name -->
+        <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" class="form-control" [(ngModel)]="updatedOwner.lastname" name="lastname" placeholder="Enter new last name">
+        </div>
+
+        <!-- Address -->
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input type="text" id="address" class="form-control" [(ngModel)]="updatedOwner.address" name="address" placeholder="Enter new address">
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" class="form-control" [(ngModel)]="updatedOwner.email" name="email" placeholder="Enter new email">
+        </div>
+
+        <!-- Contact Phone -->
+        <div class="form-group">
+          <label for="contactPhone">Contact Phone Number</label>
+          <input type="text" id="contactPhone" class="form-control" [(ngModel)]="updatedOwner.contactPhone" name="contactPhone" placeholder="Enter new phone number">
+        </div>
+
+        <!-- Credit Card Number -->
+        <div class="form-group">
+          <label for="creditCardNumber">Credit Card Number</label>
+          <input type="text" id="creditCardNumber" class="form-control" [(ngModel)]="updatedOwner.creditCardNumber" name="creditCardNumber" placeholder="Enter new credit card number">
+        </div>
+
+        <!-- Profile Picture Upload -->
+        <div class="form-group">
+          <label for="profilePicture">Profile Picture</label>
+          <input type="file" id="profilePicture" class="form-control-file" (change)="onFileSelected($event)" accept="image/png, image/jpeg">
+        </div>
+
+        <!-- Error Message Display -->
+        <div *ngIf="errorMessage" class="alert alert-danger mt-3">
+              {{ errorMessage }}
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

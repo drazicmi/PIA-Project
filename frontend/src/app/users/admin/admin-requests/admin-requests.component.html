@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Admin Requests</title>
+</head>
+<body>
+  <div class="container mt-4">
+    <h2>Admin Requests</h2>
+
+    <!-- Check if there are any requests to display -->
+    <div *ngIf="requests.length > 0; else noRequests">
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let request of requests">
+            <td>{{ request.user.username }}</td>
+            <td>{{ request.user.email }}</td>
+            <td>{{ request.approved ? 'Approved' : 'Pending' }}</td>
+            <td>
+              <button class="btn btn-primary btn-sm" (click)="approveRequest(request)" [disabled]="request.approved">Approve</button>
+              <button class="btn btn-danger btn-sm" (click)="rejectRequest(request)" [disabled]="request.approved">Reject</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Message displayed when no requests are available -->
+    <ng-template #noRequests>
+      <p>No requests available at the moment.</p>
+    </ng-template>
+  </div>
+</body>
+</html>

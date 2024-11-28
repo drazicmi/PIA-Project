@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link href="admin-login.component.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row justify-content-center align-items-center padding">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">User Login</div>
+                <div class="card-body">
+                    <!-- Main login form -->
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" class="form-control" [(ngModel)]="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" class="form-control" [(ngModel)]="password" required>
+                        </div>
+                        <div class="form-group" *ngIf="errorMessage">
+                              {{errorMessage}}
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-block" (click)="loginUser()">Login</button>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <!-- Additional button for changing credentials -->
+            <button class="btn btn-dark btn-block" (click)="changeCredentials()">Change your credentials</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

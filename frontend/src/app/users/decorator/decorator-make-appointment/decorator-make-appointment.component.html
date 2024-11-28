@@ -1,0 +1,55 @@
+<div class="container mt-5">
+  <h2>Unprocessed Appointments</h2>
+
+
+  <!-- Display appointments in a table -->
+  <div *ngIf="appointments.length > 0">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Appointment Date</th>
+          <th>Created On</th>
+          <th>Company Name</th>
+          <th>Requested Services</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let appointment of appointments">
+          <td>{{ appointment.date }}</td>
+          <td>{{ appointment.schedulingDate }}</td>
+          <td>{{ appointment.firm.name }}</td>
+          <td>
+            <ul>
+              <li *ngFor="let service of appointment.services">{{ service }}</li>
+            </ul>
+          </td>
+          <td>
+            <!-- Confirm Button -->
+            <button class="btn btn-success" (click)="confirmAppointment(appointment)">Confirm</button>
+
+            <!-- Reject Button, clicking opens rejection form -->
+            <button class="btn btn-danger" (click)="selectAppointmentForRejection(appointment)">Reject</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Rejection form (visible only when an appointment is selected for rejection) -->
+  <div *ngIf="selectedAppointment" class="rejection-form mt-4">
+    <h4>Reject Appointment</h4>
+    <p>Appointment Date: {{ selectedAppointment.date }}</p>
+    <div class="form-group">
+      <label for="rejectionComment">Reason for Rejection:</label>
+      <textarea id="rejectionComment" [(ngModel)]="rejectionComment" class="form-control" rows="3"></textarea>
+    </div>
+    <button class="btn btn-danger" (click)="rejectAppointment(selectedAppointment)">Submit Rejection</button>
+    <button class="btn btn-secondary" (click)="cancelRejection()">Cancel</button>
+  </div>
+
+  <!-- If there are no appointments -->
+  <div *ngIf="appointments.length === 0">
+    <p>No unprocessed appointments available.</p>
+  </div>
+</div>

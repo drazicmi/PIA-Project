@@ -1,0 +1,99 @@
+[{
+  "_id": {
+    "$oid": "66e73931272f1fc886d101a1"
+  },
+  "name": "Nova Firma",
+  "address": "Bistricka 12",
+  "services": [
+    "Usluga 1",
+    "Usluga 2",
+    "Usluga 3"
+  ],
+  "service_prices": [
+    5000,
+    4000,
+    1500
+  ],
+  "longitude": 254.5485,
+  "latitude": 511.2541,
+  "decorator_list": [
+    "Mihajlo Pavlovic",
+    "Misko Miskovic"
+  ],
+  "vacation_start": {
+    "$date": "2024-09-12T00:00:00.000Z"
+  },
+  "vacation_end": {
+    "$date": "2024-09-21T00:00:00.000Z"
+  },
+  "__v": 0,
+  "contactNumber": "+381624859624"
+},
+{
+  "_id": {
+    "$oid": "66e7398b272f1fc886d101a6"
+  },
+  "name": "Nova Firma 2",
+  "address": "Pariska 12",
+  "services": [
+    "Usluga 1",
+    "Usluga 2",
+    "Usluga 3",
+    "Usluga 4"
+  ],
+  "service_prices": [
+    4500,
+    3500,
+    1500,
+    7000
+  ],
+  "longitude": 425.2541,
+  "latitude": 2544.2541,
+  "decorator_list": [
+    "Marko Janicijevic",
+    "Decorator Decoratorovic"
+  ],
+  "vacation_start": {
+    "$date": "2024-09-19T00:00:00.000Z"
+  },
+  "vacation_end": {
+    "$date": "2024-10-04T00:00:00.000Z"
+  },
+  "__v": 0,
+  "contactNumber": "+381644349692"
+},
+{
+  "_id": {
+    "$oid": "66f16e4f75925f6ec1a50ba7"
+  },
+  "name": "Agencija za dekorisanje",
+  "address": "Ruže Jovanovića 27",
+  "services": [
+    "Usluga 1",
+    "Usluga 2",
+    "Usluga 3",
+    "Usluga 4"
+  ],
+  "service_prices": [
+    5000,
+    3500,
+    4500,
+    5000
+  ],
+  "longitude": 311.25475,
+  "latitude": 514.25416,
+  "decorator_list": [
+    "Milica Djordjevic",
+    "Djordje Djordjevic"
+  ],
+  "vacation_start": {
+    "$date": "2024-10-01T00:00:00.000Z"
+  },
+  "vacation_end": {
+    "$date": "2024-10-05T00:00:00.000Z"
+  },
+  "contactNumber": {
+    "$numberLong": "381654784444"
+  },
+  "__v": 0
+}]

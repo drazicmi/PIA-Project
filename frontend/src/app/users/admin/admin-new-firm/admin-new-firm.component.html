@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Add New Firm</title>
+</head>
+<body>
+  <div class="container mt-4">
+    <h2>Add New Firm</h2>
+    <form (ngSubmit)="onSubmit()">
+      <!-- Firm Name -->
+      <div class="form-group">
+        <label for="firmName">Firm Name</label>
+        <input type="text" class="form-control" id="firmName" [(ngModel)]="firm.name" name="firmName" required>
+      </div>
+
+      <!-- Firm Address -->
+      <div class="form-group">
+        <label for="firmAddress">Firm Address</label>
+        <input type="text" class="form-control" id="firmAddress" [(ngModel)]="firm.address" name="firmAddress" required>
+      </div>
+
+      <!-- Contact Number -->
+      <div class="form-group">
+        <label for="firmAddress">Contact Number</label>
+        <input type="text" class="form-control" id="contactNumber" [(ngModel)]="firm.contactNumber" name="contactNumber" required>
+      </div>
+
+      <!-- List of Services and Prices -->
+      <div class="form-group">
+        <label for="services">Services Offered and Prices</label>
+        <div class="input-group">
+          <input type="text" class="form-control" [(ngModel)]="serviceInput" placeholder="Service" name="serviceInput">
+          <input type="number" class="form-control" [(ngModel)]="servicePriceInput" placeholder="Price" name="servicePriceInput">
+        </div>
+        <button type="button" class="btn btn-primary mt-2" (click)="addService()">Add Service</button>
+        <ul class="list-group mt-2">
+          <li class="list-group-item" *ngFor="let service of firm.services; let i = index">
+            {{ service }} - {{ firm.service_prices[i] }} <button type="button" class="btn btn-sm btn-danger" (click)="removeService(i)">Remove</button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Location: Longitude and Latitude -->
+      <div class="form-group">
+        <label for="longitude">Longitude</label>
+        <input type="number" step="any" class="form-control" id="longitude" [(ngModel)]="firm.longitude" name="longitude" required>
+      </div>
+
+      <div class="form-group">
+        <label for="latitude">Latitude</label>
+        <input type="number" step="any" class="form-control" id="latitude" [(ngModel)]="firm.latitude" name="latitude" required>
+      </div>
+
+      <!-- Decorators (Minimum 2) -->
+      <div class="form-group">
+        <label for="decorators">Decorators (Select at least 2)</label>
+        <select class="form-control" multiple [(ngModel)]="selectedDecorators" name="decorators" required>
+          <option *ngFor="let decorator of decorators" [value]="decorator.firstname + ' ' + decorator.lastname + '#' + decorator.username">{{ decorator.username }}</option>
+        </select>
+        <small class="form-text text-muted">Hold down Ctrl (Windows) or Command (Mac) to select multiple decorators.</small>
+      </div>
+
+      <!-- Annual Vacation Period -->
+      <div class="form-group">
+        <label for="vacationStart">Vacation Start</label>
+        <input type="date" class="form-control" id="vacationStart" [(ngModel)]="firm.vacation_start" name="vacationStart" required>
+      </div>
+      <div class="form-group">
+        <label for="vacationEnd">Vacation End</label>
+        <input type="date" class="form-control" id="vacationEnd" [(ngModel)]="firm.vacation_end" name="vacationEnd" required>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-success mt-3">Add Firm</button>
+    </form>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

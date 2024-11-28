@@ -1,0 +1,45 @@
+{
+  "elements": [
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 10,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 50,
+      "y": 10,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "pool",
+      "x": 100,
+      "y": 50,
+      "width": 200,
+      "height": 100
+    },
+    {
+      "type": "table",
+      "x": 350,
+      "y": 200,
+      "radius": 15
+    },
+    {
+      "type": "chair",
+      "x": 320,
+      "y": 220,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 370,
+      "y": 220,
+      "width": 20,
+      "height": 10
+    }
+  ]
+}

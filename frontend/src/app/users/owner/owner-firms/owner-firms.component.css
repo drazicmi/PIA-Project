@@ -1,0 +1,63 @@
+/* Styling for clickable firm name */
+.firm-link {
+  color: #1e90ff;  /* Blue color for clickable links */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.firm-link:hover {
+  text-decoration: underline;  /* Underline on hover */
+}
+
+/* Other styles remain the same */
+
+/* Styling for search input fields */
+.search-fields input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f0f0f0;  /* Light background for input fields */
+  color: #000;                /* Black text */
+}
+
+/* Black-themed button styling */
+.search-fields button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #000000;  /* Black background */
+  color: #ffffff;             /* White text */
+  cursor: pointer;
+}
+
+.search-fields button:hover {
+  background-color: #333333;  /* Darker black on hover */
+}
+
+.search-fields button:active {
+  background-color: #111111;  /* Even darker black when clicked */
+}
+
+/* Table styling */
+.table-dark {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+.table-dark th {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.table-dark th:hover {
+  text-decoration: underline;
+}
+
+/* Sort arrow styling */
+.sort-arrow {
+  font-size: 14px;
+  margin-left: 8px;
+}

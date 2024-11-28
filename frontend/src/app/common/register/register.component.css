@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+}
+
+.card-header {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body .form-group label {
+  font-weight: bold;
+}
+
+.card-body .form-check-input {
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background-color: #000; /* Black background */
+  border-color: #000; /* Black border */
+  color: #fff; /* White text */
+  margin-top: 10px; /* Add margin between button and form */
+}
+
+.btn-primary:hover {
+  background-color: #333; /* Dark gray background on hover */
+  border-color: #333; /* Dark gray border on hover */
+}
+
+.card-icon {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}

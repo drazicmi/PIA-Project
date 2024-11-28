@@ -1,0 +1,191 @@
+{
+  "elements": [
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 10,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 50,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 90,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 130,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 170,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 210,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 50,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 90,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 130,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 170,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 210,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 250,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 290,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 330,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 10,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 50,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 90,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 130,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 170,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 210,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "pool",
+      "x": 70,
+      "y": 100,
+      "width": 240,
+      "height": 120
+    },
+    {
+      "type": "table",
+      "x": 150,
+      "y": 40,
+      "radius": 15
+    },
+    {
+      "type": "table",
+      "x": 250,
+      "y": 40,
+      "radius": 15
+    },
+    {
+      "type": "chair",
+      "x": 110,
+      "y": 60,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 170,
+      "y": 60,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 220,
+      "y": 60,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 270,
+      "y": 60,
+      "width": 20,
+      "height": 10
+    }
+  ]
+}

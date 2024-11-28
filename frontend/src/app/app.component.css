@@ -1,0 +1,36 @@
+.header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.header .logo {
+  margin-left: 20px;
+  height: 30px;
+  width: auto;
+}
+
+.header .logout {
+  margin-right: 20px;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.padding_div {
+  padding-top: 44px;
+}
+
+
+.main-menu {
+  margin-right: 5px;
+}

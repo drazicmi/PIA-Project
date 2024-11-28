@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./owner-firm-details.component.css">
+  <title>Firm Details</title>
+</head>
+<body>
+  <div class="container mt-5">
+    <h2>Firm Details</h2>
+
+    <div *ngIf="firm">
+      <!-- Displaying firm details -->
+      <h3>{{ firm.name }}</h3>
+      <p><strong>Address:</strong> {{ firm.address }}</p>
+      <p><strong>Contact Phone:</strong> {{ firm.contactNumber }}</p>
+      <p><strong>Vacation Period:</strong> From {{ firm.vacation_start | date:'longDate' }} to {{ firm.vacation_end | date:'longDate' }}</p>
+
+      <h4>Services</h4>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let service of firm.services; let i = index">
+            <td>{{ service }}</td>
+            <td>{{ firm.service_prices[i] | currency }}</td>  <!-- Assuming service_prices is in sync with services -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Multi-Step Form Starts Here -->
+    <div class="appointment-form mt-4">
+      <h3>Schedule Your Garden</h3>
+
+      <!-- Error message display -->
+      <div *ngIf="errorMessage" class="alert alert-danger">
+        {{ errorMessage }}
+      </div>
+
+      <!-- Success message display -->
+      <div *ngIf="successMessage" class="alert alert-success">
+        {{ successMessage }}
+      </div>
+
+      <!-- Step 1: Basic Information -->
+      <div *ngIf="currentStep === 1">
+        <h4>Step 1: Basic Information</h4>
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input type="date" id="date" [(ngModel)]="appointmentData.date" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="time">Time:</label>
+          <input type="time" id="time" [(ngModel)]="appointmentData.time" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="squareFootage">Total Square Footage of Garden:</label>
+          <input type="number" id="squareFootage" [(ngModel)]="appointmentData.squareFootage" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="gardenType">Type of Garden:</label>
+          <select id="gardenType" [(ngModel)]="appointmentData.gardenType" (change)="onGardenTypeChange($event)" class="form-control">
+            <option value="">Select Garden Type</option>
+            <option value="private">Private Garden</option>
+            <option value="restaurant">Restaurant Garden</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" (click)="nextStep()">Next</button>
+      </div>
+
+      <!-- Step 2: Detailed Information -->
+      <div *ngIf="currentStep === 2">
+        <h4>Step 2: Garden Details</h4>
+
+        <!-- Private Garden Form -->
+        <div *ngIf="gardenType === 'private'">
+          <div class="form-group">
+            <label for="poolSquareFootage">Square Footage for Pool:</label>
+            <input type="number" id="poolSquareFootage" [(ngModel)]="appointmentData.poolSquareFootage" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="greenerySquareFootage">Square Footage for Greenery:</label>
+            <input type="number" id="greenerySquareFootage" [(ngModel)]="appointmentData.greenerySquareFootage" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="sunbedsSquareFootage">Square Footage for Sunbeds and Tables:</label>
+            <input type="number" id="sunbedsSquareFootage" [(ngModel)]="appointmentData.sunbedsSquareFootage" class="form-control">
+          </div>
+        </div>
+
+        <!-- Restaurant Garden Form -->
+        <div *ngIf="gardenType === 'restaurant'">
+          <div class="form-group">
+            <label for="fountainSquareFootage">Square Footage for Fountain:</label>
+            <input type="number" id="fountainSquareFootage" [(ngModel)]="appointmentData.fountainSquareFootage" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="greenerySquareFootage">Square Footage for Greenery:</label>
+            <input type="number" id="greenerySquareFootage" [(ngModel)]="appointmentData.greenerySquareFootage" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="tableCount">Number of Tables:</label>
+            <input type="number" id="tableCount" [(ngModel)]="appointmentData.tableCount" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="chairCount">Number of Chairs:</label>
+            <input type="number" id="chairCount" [(ngModel)]="appointmentData.chairCount" class="form-control">
+          </div>
+        </div>
+
+        <h5>Select Services</h5>
+        <div *ngFor="let service of firm.services">
+          <label>
+            <input
+              type="checkbox"
+              [value]="service"
+              (change)="toggleServiceSelection(service)"
+              [checked]="appointmentData.selectedServices.includes(service)">
+            {{ service }}
+          </label>
+        </div>
+
+        <!-- JSON Upload and Canvas for Garden Layout -->
+        <div class="mt-4">
+          <h3>Upload Garden Layout (JSON)</h3>
+          <input type="file" (change)="onFileSelected($event)" />
+          <canvas id="gardenCanvas" width="500" height="400"></canvas>
+        </div>
+
+        <!-- Common for both garden types -->
+        <div class="form-group mt-3">
+          <label for="additionalDescription">Additional Description (optional):</label>
+          <textarea id="additionalDescription" [(ngModel)]="appointmentData.additionalDescription" class="form-control"></textarea>
+        </div>
+
+        <!-- Submit and Back buttons moved below the JSON upload section -->
+        <button class="btn btn-secondary" (click)="previousStep()">Back</button>
+        <button class="btn btn-success" (click)="submitForm()">Submit</button>
+      </div>
+    </div>
+
+    <button class="btn btn-primary mt-3" (click)="goBack()">Back to Firms List</button>
+  </div>
+</body>
+</html>

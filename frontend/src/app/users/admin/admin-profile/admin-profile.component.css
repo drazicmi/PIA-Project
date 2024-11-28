@@ -1,0 +1,58 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2, h3, h4 {
+  color: #333;
+}
+
+.table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.table-bordered {
+  border: 1px solid #ddd;
+}
+
+.table th, .table td {
+  padding: 12px;
+  text-align: left;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.empty-list {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.alert {
+  margin-top: 10px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

@@ -1,0 +1,122 @@
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.card {
+  background-color: #1c1c1c;
+  border: 1px solid #333;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  color:#fff;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  color:#fff;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.form-control {
+  background-color: #2c2c2c;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #777;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.maintenance-form {
+  color:#FFF;
+  margin-top: 20px;
+}
+
+textarea {
+  height: 80px;
+}
+
+.no-data-message p {
+  text-align: center;
+  color: #ccc;
+  font-size: 1rem;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    padding: 15px;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}

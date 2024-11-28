@@ -1,0 +1,56 @@
+<div class="container mt-5">
+  <h2>Completed Jobs</h2>
+
+  <!-- Completed Jobs List -->
+  <div *ngIf="appointments.length > 0">
+    <h3>Completed Jobs</h3>
+
+    <!-- Loop through completed appointments -->
+    <div *ngFor="let appointment of appointments" class="card mt-3">
+      <div class="card-body">
+        <h4 class="card-title">Completed Job on {{ appointment.date | date: 'longDate' }}</h4>
+        <p class="card-text">
+          <strong>Firm:</strong> {{ appointment.firm.name }}<br>
+          <strong>Garden Type:</strong> {{ appointment.gardenType }}<br>
+          <strong>Number of Pools:</strong> {{ appointment.poolSquareFootage ? 1 : 0 }}<br>
+          <strong>Number of Fountains:</strong> {{ appointment.fountainSquareFootage ? 1 : 0 }}<br>
+        </p>
+
+        <!-- Show the maintenance button only if the job is older than 6 months -->
+        <button
+          class="btn btn-primary"
+          *ngIf="isOlderThanSixMonths(appointment.date)"
+          (click)="scheduleMaintenance(appointment)">
+          Schedule Maintenance
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Visual separator between jobs and maintenance -->
+  <hr class="my-5">
+
+  <!-- Maintenance List -->
+  <div *ngIf="maintenances.length > 0">
+    <h3>Maintenances</h3>
+
+    <!-- Loop through completed maintenances -->
+    <div *ngFor="let maintenance of maintenances" class="card mt-3">
+      <div class="card-body">
+        <!-- No date for maintenance -->
+        <h4 class="card-title">Maintenance Job</h4>
+        <p class="card-text">
+          <strong>Firm:</strong> {{ maintenance.firm.name }}<br>
+          <strong>Garden Type:</strong> {{ maintenance.gardenType }}<br>
+          <strong>Number of Pools:</strong> {{ maintenance.poolSquareFootage ? 1 : 0 }}<br>
+          <strong>Number of Fountains:</strong> {{ maintenance.fountainSquareFootage ? 1 : 0 }}<br>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Display a message if no appointments are available -->
+  <div *ngIf="appointments.length === 0 && maintenances.length === 0">
+    <p>No completed jobs or maintenances available at this time.</p>
+  </div>
+</div>

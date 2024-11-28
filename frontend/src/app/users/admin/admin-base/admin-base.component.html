@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin's Dashboard</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="admin-base.component.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand">Admin's Dashboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/admin/base/profile" routerLinkActive="active">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/admin/base/requests" routerLinkActive="active">Requests</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/admin/base/new-decorator" routerLinkActive="active">Add new decorator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/admin/base/new-firm" routerLinkActive="active">Add new firm</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <router-outlet></router-outlet>
+  </div>
+</body>
+</html>

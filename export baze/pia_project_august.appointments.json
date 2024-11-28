@@ -1,0 +1,790 @@
+[{
+  "_id": {
+    "$oid": "66eacaae2cbbf0504f431ba1"
+  },
+  "schedulingDate": {
+    "$date": "2024-09-18T12:42:20.384Z"
+  },
+  "date": {
+    "$date": "2024-10-06T00:00:00.000Z"
+  },
+  "time": "08:00",
+  "squareFootage": 500,
+  "gardenType": "private",
+  "services": [
+    "Usluga 1",
+    "Usluga 2"
+  ],
+  "additionalDescription": "",
+  "firm": {
+    "_id": {
+      "$oid": "66e73931272f1fc886d101a1"
+    },
+    "name": "Nova Firma"
+  },
+  "totalSquareFootage": 500,
+  "poolSquareFootage": 150,
+  "greenerySquareFootage": 100,
+  "sunbedsSquareFootage": 120,
+  "fountainSquareFootage": 0,
+  "tableCount": 0,
+  "chairCount": 0,
+  "owner": {
+    "_id": {
+      "$oid": "66d9b21c19efc380e0861c49"
+    },
+    "name": "Jon Doe"
+  },
+  "__v": 0,
+  "decoratorDecision": "denied",
+  "rejectionComment": "Nisam slobodan tog dana"
+},
+{
+  "_id": {
+    "$oid": "66ead07b9069d2d35c273ff7"
+  },
+  "schedulingDate": {
+    "$date": "2024-09-18T13:07:02.178Z"
+  },
+  "date": {
+    "$date": "1970-01-01T00:00:00.000Z"
+  },
+  "time": "0",
+  "squareFootage": 500,
+  "gardenType": "private",
+  "services": [
+    "Usluga 3"
+  ],
+  "additionalDescription": "opis novi",
+  "firm": {
+    "_id": {
+      "$oid": "66e73931272f1fc886d101a1"
+    },
+    "name": "Nova Firma"
+  },
+  "totalSquareFootage": 500,
+  "poolSquareFootage": 150,
+  "greenerySquareFootage": 250,
+  "sunbedsSquareFootage": 100,
+  "fountainSquareFootage": 0,
+  "tableCount": 0,
+  "chairCount": 0,
+  "owner": {
+    "_id": {
+      "$oid": "66d9b21c19efc380e0861c49"
+    },
+    "name": "Jon Doe"
+  },
+  "__v": 0,
+  "decoratorDecision": "maintenenceWaiting",
+  "decorator_id": {
+    "$oid": "66dc3248275441547540c7b1"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ead1e99069d2d35c273fff"
+  },
+  "schedulingDate": {
+    "$date": "2024-09-18T13:13:12.876Z"
+  },
+  "date": {
+    "$date": "2024-10-06T00:00:00.000Z"
+  },
+  "time": "10:00",
+  "squareFootage": 500,
+  "gardenType": "private",
+  "services": [
+    "Usluga 1",
+    "Usluga 2"
+  ],
+  "additionalDescription": "",
+  "firm": {
+    "_id": {
+      "$oid": "66e7398b272f1fc886d101a6"
+    },
+    "name": "Nova Firma 2"
+  },
+  "totalSquareFootage": 500,
+  "poolSquareFootage": 150,
+  "greenerySquareFootage": 100,
+  "sunbedsSquareFootage": 250,
+  "fountainSquareFootage": 0,
+  "tableCount": 0,
+  "chairCount": 0,
+  "owner": {
+    "_id": {
+      "$oid": "66d9b21c19efc380e0861c49"
+    },
+    "name": "Jon Doe"
+  },
+  "__v": 0,
+  "decoratorDecision": "pending"
+},
+{
+  "_id": {
+    "$oid": "66ec18b95f10cf73b8df4125"
+  },
+  "schedulingDate": {
+    "$date": "2024-09-19T12:27:34.886Z"
+  },
+  "date": {
+    "$date": "1970-01-01T00:00:00.000Z"
+  },
+  "time": "0",
+  "squareFootage": 500,
+  "gardenType": "restaurant",
+  "services": [
+    "Usluga 1",
+    "Usluga 3"
+  ],
+  "additionalDescription": "opis opis",
+  "firm": {
+    "_id": {
+      "$oid": "66e7398b272f1fc886d101a6"
+    },
+    "name": "Nova Firma 2"
+  },
+  "totalSquareFootage": 500,
+  "poolSquareFootage": 0,
+  "greenerySquareFootage": 200,
+  "sunbedsSquareFootage": 0,
+  "fountainSquareFootage": 300,
+  "tableCount": 2,
+  "chairCount": 4,
+  "gardenLayout": [
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 10,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 50,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 90,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 130,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 170,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 210,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 50,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 90,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 130,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 170,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 210,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 250,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 290,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 330,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 10,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 50,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 90,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 130,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 170,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 210,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "pool",
+      "x": 70,
+      "y": 100,
+      "width": 240,
+      "height": 120
+    },
+    {
+      "type": "table",
+      "x": 150,
+      "y": 40,
+      "radius": 15
+    },
+    {
+      "type": "table",
+      "x": 250,
+      "y": 40,
+      "radius": 15
+    },
+    {
+      "type": "chair",
+      "x": 110,
+      "y": 60,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 170,
+      "y": 60,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 220,
+      "y": 60,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 270,
+      "y": 60,
+      "width": 20,
+      "height": 10
+    }
+  ],
+  "owner": {
+    "_id": {
+      "$oid": "66d9b21c19efc380e0861c49"
+    },
+    "name": "Jon Doe"
+  },
+  "decoratorDecision": "maintenenceWaiting",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ec25288bc6079f27495eb7"
+  },
+  "schedulingDate": {
+    "$date": "2024-07-19T20:20:40.950Z"
+  },
+  "date": {
+    "$date": "2024-10-06T00:00:00.000Z"
+  },
+  "time": "22:16",
+  "squareFootage": 500,
+  "gardenType": "private",
+  "services": [
+    "Usluga 1",
+    "Usluga 3"
+  ],
+  "additionalDescription": "opis",
+  "firm": {
+    "_id": {
+      "$oid": "66e73931272f1fc886d101a1"
+    },
+    "name": "Nova Firma"
+  },
+  "totalSquareFootage": 500,
+  "poolSquareFootage": 300,
+  "greenerySquareFootage": 100,
+  "sunbedsSquareFootage": 100,
+  "fountainSquareFootage": 0,
+  "tableCount": 0,
+  "chairCount": 0,
+  "gardenLayout": [
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 10,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 50,
+      "y": 10,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "fountain",
+      "x": 200,
+      "y": 150,
+      "radius": 50
+    },
+    {
+      "type": "table",
+      "x": 150,
+      "y": 300,
+      "radius": 15
+    },
+    {
+      "type": "chair",
+      "x": 130,
+      "y": 320,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 170,
+      "y": 320,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "table",
+      "x": 250,
+      "y": 300,
+      "radius": 15
+    },
+    {
+      "type": "chair",
+      "x": 230,
+      "y": 320,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 270,
+      "y": 320,
+      "width": 20,
+      "height": 10
+    }
+  ],
+  "owner": {
+    "_id": {
+      "$oid": "66d9b21c19efc380e0861c49"
+    },
+    "name": "Jon Doe"
+  },
+  "decoratorDecision": "confirmed",
+  "__v": 0,
+  "decorator_id": {
+    "$oid": "66dc3248275441547540c7b1"
+  }
+},
+{
+  "_id": {
+    "$oid": "66f174119d28ea4e15331c25"
+  },
+  "schedulingDate": {
+    "$date": "2024-09-23T13:58:41.338Z"
+  },
+  "date": {
+    "$date": "2024-10-07T00:00:00.000Z"
+  },
+  "time": "08:00",
+  "squareFootage": 500,
+  "gardenType": "private",
+  "services": [
+    "Usluga 2",
+    "Usluga 4"
+  ],
+  "additionalDescription": "",
+  "firm": {
+    "_id": {
+      "$oid": "66f16e4f75925f6ec1a50ba7"
+    },
+    "name": "Agencija za dekorisanje"
+  },
+  "totalSquareFootage": 500,
+  "poolSquareFootage": 150,
+  "greenerySquareFootage": 200,
+  "sunbedsSquareFootage": 150,
+  "fountainSquareFootage": 0,
+  "tableCount": 0,
+  "chairCount": 0,
+  "gardenLayout": [
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 10,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 50,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 90,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 130,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 170,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 210,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 50,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 90,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 130,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 170,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 210,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 250,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 290,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 330,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 10,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 50,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 90,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 130,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 170,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 210,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "pool",
+      "x": 70,
+      "y": 100,
+      "width": 240,
+      "height": 120
+    },
+    {
+      "type": "table",
+      "x": 150,
+      "y": 40,
+      "radius": 15
+    },
+    {
+      "type": "table",
+      "x": 250,
+      "y": 40,
+      "radius": 15
+    },
+    {
+      "type": "chair",
+      "x": 110,
+      "y": 60,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 170,
+      "y": 60,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 220,
+      "y": 60,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 270,
+      "y": 60,
+      "width": 20,
+      "height": 10
+    }
+  ],
+  "owner": {
+    "_id": {
+      "$oid": "66d9b21c19efc380e0861c49"
+    },
+    "name": "Marko Perkovic"
+  },
+  "decoratorDecision": "pending",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f17c96bb89615746f6a05b"
+  },
+  "schedulingDate": {
+    "$date": "2024-09-23T14:35:02.549Z"
+  },
+  "date": {
+    "$date": "2024-09-22T00:00:00.000Z"
+  },
+  "time": "08:00",
+  "squareFootage": 300,
+  "gardenType": "restaurant",
+  "services": [
+    "Usluga 1"
+  ],
+  "additionalDescription": "",
+  "firm": {
+    "_id": {
+      "$oid": "66e73931272f1fc886d101a1"
+    },
+    "name": "Nova Firma"
+  },
+  "totalSquareFootage": 300,
+  "poolSquareFootage": 0,
+  "greenerySquareFootage": 200,
+  "sunbedsSquareFootage": 0,
+  "fountainSquareFootage": 100,
+  "tableCount": 2,
+  "chairCount": 4,
+  "gardenLayout": [
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 10,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 50,
+      "y": 10,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "fountain",
+      "x": 200,
+      "y": 150,
+      "radius": 50
+    },
+    {
+      "type": "table",
+      "x": 150,
+      "y": 300,
+      "radius": 15
+    },
+    {
+      "type": "chair",
+      "x": 130,
+      "y": 320,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 170,
+      "y": 320,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "table",
+      "x": 250,
+      "y": 300,
+      "radius": 15
+    },
+    {
+      "type": "chair",
+      "x": 230,
+      "y": 320,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 270,
+      "y": 320,
+      "width": 20,
+      "height": 10
+    }
+  ],
+  "owner": {
+    "_id": {
+      "$oid": "66d9b21c19efc380e0861c49"
+    },
+    "name": "Marko Perkovic"
+  },
+  "decoratorDecision": "maintenanceWaiting",
+  "__v": 0,
+  "decorator_id": {
+    "$oid": "669fdc567be919570b545094"
+  }
+}]

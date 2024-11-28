@@ -1,0 +1,43 @@
+<!-- Display a message if no maintenance requests are available -->
+<div *ngIf="maintenences.length === 0" class="no-data-message">
+  <p>No water maintenance requests at this time.</p>
+</div>
+<div class="container mt-5">
+  <h2>Water Maintenance Requests</h2>
+
+  <!-- Loop through all maintenance requests -->
+  <div *ngFor="let maintenance of maintenences" class="card mt-3">
+    <div class="card-body">
+      <h4 class="card-title">{{ maintenance.firm.name }} - {{ maintenance.gardenType }} Garden</h4>
+      <p class="card-text">
+        <strong>Requested Services:</strong> {{ maintenance.services.join(', ') }}<br>
+        <strong>Requested on:</strong> {{ maintenance.schedulingDate | date: 'longDate' }}<br>
+        <strong>Appointment Date:</strong> {{ maintenance.date | date: 'longDate' }} at {{ maintenance.time }}<br>
+        <strong>Total Square Footage:</strong> {{ maintenance.squareFootage }} sq ft<br>
+        <strong>Number of Pools:</strong> {{ maintenance.poolSquareFootage ? 1 : 0 }}<br>
+        <strong>Number of Fountains:</strong> {{ maintenance.fountainSquareFootage ? 1 : 0 }}<br>
+      </p>
+
+      <!-- Maintenance action form -->
+      <div class="maintenance-form">
+        <label for="completionDate">Estimated Completion Date:</label>
+        <input type="date" [(ngModel)]="estimatedCompletionDate[maintenance._id]" class="form-control mb-3">
+
+        <label for="completionTime">Estimated Completion Time:</label>
+        <input type="time" [(ngModel)]="estimatedCompletionTime[maintenance._id]" class="form-control mb-3">
+
+        <!-- Confirmation and Denial buttons -->
+        <button class="btn btn-success" (click)="confirmMaintenance(maintenance)">Confirm</button>
+        <button class="btn btn-danger" (click)="toggleDenialForm(maintenance._id)">Deny</button>
+
+        <!-- Denial form -->
+        <div *ngIf="denialForms[maintenance._id]">
+          <label for="denialComment">Reason for Denial:</label>
+          <textarea [(ngModel)]="denialComments[maintenance._id]" class="form-control mb-3"></textarea>
+          <button class="btn btn-danger" (click)="submitDenial(maintenance)">Submit Denial</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

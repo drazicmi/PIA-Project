@@ -1,0 +1,64 @@
+{
+  "elements": [
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 10,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 50,
+      "y": 10,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "fountain",
+      "x": 200,
+      "y": 150,
+      "radius": 50
+    },
+    {
+      "type": "table",
+      "x": 150,
+      "y": 300,
+      "radius": 15
+    },
+    {
+      "type": "chair",
+      "x": 130,
+      "y": 320,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 170,
+      "y": 320,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "table",
+      "x": 250,
+      "y": 300,
+      "radius": 15
+    },
+    {
+      "type": "chair",
+      "x": 230,
+      "y": 320,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 270,
+      "y": 320,
+      "width": 20,
+      "height": 10
+    }
+  ]
+}

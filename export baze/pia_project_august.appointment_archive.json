@@ -1,0 +1,596 @@
+[{
+  "_id": {
+    "$oid": "66ed60ac6859d081a0bdab0c"
+  },
+  "schedulingDate": {
+    "$date": "2024-09-19T13:20:40.950Z"
+  },
+  "date": {
+    "$date": "1970-01-01T00:00:00.000Z"
+  },
+  "time": "0",
+  "squareFootage": 500,
+  "gardenType": "private",
+  "services": [
+    "Usluga 1",
+    "Usluga 3"
+  ],
+  "additionalDescription": "opis",
+  "firm": {
+    "_id": {
+      "$oid": "66e73931272f1fc886d101a1"
+    },
+    "name": "Nova Firma"
+  },
+  "totalSquareFootage": 500,
+  "poolSquareFootage": 300,
+  "greenerySquareFootage": 100,
+  "sunbedsSquareFootage": 100,
+  "fountainSquareFootage": 0,
+  "tableCount": 0,
+  "chairCount": 0,
+  "gardenLayout": [
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 10,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 50,
+      "y": 10,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "fountain",
+      "x": 200,
+      "y": 150,
+      "radius": 50
+    },
+    {
+      "type": "table",
+      "x": 150,
+      "y": 300,
+      "radius": 15
+    },
+    {
+      "type": "chair",
+      "x": 130,
+      "y": 320,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 170,
+      "y": 320,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "table",
+      "x": 250,
+      "y": 300,
+      "radius": 15
+    },
+    {
+      "type": "chair",
+      "x": 230,
+      "y": 320,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 270,
+      "y": 320,
+      "width": 20,
+      "height": 10
+    }
+  ],
+  "owner": {
+    "_id": {
+      "$oid": "66d9b21c19efc380e0861c49"
+    },
+    "name": "Jon Doe"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed67af63cbeb956d6d1835"
+  },
+  "schedulingDate": {
+    "$date": "2024-09-19T12:27:34.886Z"
+  },
+  "date": {
+    "$date": "2024-02-05T00:00:00.000Z"
+  },
+  "time": "08:00",
+  "squareFootage": 500,
+  "gardenType": "restaurant",
+  "services": [
+    "Usluga 1",
+    "Usluga 3"
+  ],
+  "additionalDescription": "opis opis",
+  "firm": {
+    "_id": {
+      "$oid": "66e7398b272f1fc886d101a6"
+    },
+    "name": "Nova Firma 2"
+  },
+  "totalSquareFootage": 500,
+  "poolSquareFootage": 0,
+  "greenerySquareFootage": 200,
+  "sunbedsSquareFootage": 0,
+  "fountainSquareFootage": 300,
+  "tableCount": 2,
+  "chairCount": 4,
+  "gardenLayout": [
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 10,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 50,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 90,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 130,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 170,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 210,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 50,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 90,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 130,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 170,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 210,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 250,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 290,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 330,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 10,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 50,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 90,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 130,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 170,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 210,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "pool",
+      "x": 70,
+      "y": 100,
+      "width": 240,
+      "height": 120
+    },
+    {
+      "type": "table",
+      "x": 150,
+      "y": 40,
+      "radius": 15
+    },
+    {
+      "type": "table",
+      "x": 250,
+      "y": 40,
+      "radius": 15
+    },
+    {
+      "type": "chair",
+      "x": 110,
+      "y": 60,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 170,
+      "y": 60,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 220,
+      "y": 60,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 270,
+      "y": 60,
+      "width": 20,
+      "height": 10
+    }
+  ],
+  "owner": {
+    "_id": {
+      "$oid": "66d9b21c19efc380e0861c49"
+    },
+    "name": "Jon Doe"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f17aec8ff3ab3eef4b659e"
+  },
+  "schedulingDate": {
+    "$date": "2024-09-19T12:27:34.886Z"
+  },
+  "date": {
+    "$date": "2024-02-05T00:00:00.000Z"
+  },
+  "time": "08:00",
+  "squareFootage": 500,
+  "gardenType": "restaurant",
+  "services": [
+    "Usluga 1",
+    "Usluga 3"
+  ],
+  "additionalDescription": "opis opis",
+  "firm": {
+    "_id": {
+      "$oid": "66e7398b272f1fc886d101a6"
+    },
+    "name": "Nova Firma 2"
+  },
+  "totalSquareFootage": 500,
+  "poolSquareFootage": 0,
+  "greenerySquareFootage": 200,
+  "sunbedsSquareFootage": 0,
+  "fountainSquareFootage": 300,
+  "tableCount": 2,
+  "chairCount": 4,
+  "gardenLayout": [
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 10,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 50,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 90,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 130,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 170,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 10,
+      "y": 210,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 50,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 90,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 130,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 170,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 210,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 250,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 290,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 330,
+      "y": 240,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 10,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 50,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 90,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 130,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 170,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "greenery",
+      "x": 370,
+      "y": 210,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "type": "pool",
+      "x": 70,
+      "y": 100,
+      "width": 240,
+      "height": 120
+    },
+    {
+      "type": "table",
+      "x": 150,
+      "y": 40,
+      "radius": 15
+    },
+    {
+      "type": "table",
+      "x": 250,
+      "y": 40,
+      "radius": 15
+    },
+    {
+      "type": "chair",
+      "x": 110,
+      "y": 60,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 170,
+      "y": 60,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 220,
+      "y": 60,
+      "width": 20,
+      "height": 10
+    },
+    {
+      "type": "chair",
+      "x": 270,
+      "y": 60,
+      "width": 20,
+      "height": 10
+    }
+  ],
+  "owner": {
+    "_id": {
+      "$oid": "66d9b21c19efc380e0861c49"
+    },
+    "name": "Jon Doe"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f17c00bb89615746f6a02e"
+  },
+  "schedulingDate": {
+    "$date": "2024-09-18T13:07:02.178Z"
+  },
+  "date": {
+    "$date": "2024-02-19T00:00:00.000Z"
+  },
+  "time": "10:00",
+  "squareFootage": 500,
+  "gardenType": "private",
+  "services": [
+    "Usluga 3"
+  ],
+  "additionalDescription": "opis novi",
+  "firm": {
+    "_id": {
+      "$oid": "66e73931272f1fc886d101a1"
+    },
+    "name": "Nova Firma"
+  },
+  "totalSquareFootage": 500,
+  "poolSquareFootage": 150,
+  "greenerySquareFootage": 250,
+  "sunbedsSquareFootage": 100,
+  "fountainSquareFootage": 0,
+  "tableCount": 0,
+  "chairCount": 0,
+  "gardenLayout": [],
+  "owner": {
+    "_id": {
+      "$oid": "66d9b21c19efc380e0861c49"
+    },
+    "name": "Jon Doe"
+  },
+  "__v": 0
+}]

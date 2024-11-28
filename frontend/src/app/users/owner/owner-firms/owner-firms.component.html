@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./owner-firms.component.css">
+  <title>Owner Firms Page</title>
+</head>
+<body>
+  <div class="container mt-5">
+    <h2>Owner Firms Management</h2>
+
+    <h3>Search Firms</h3>
+    <div class="search-fields mb-3">
+      <!-- Input fields for search by name and address -->
+      <input type="text" [(ngModel)]="searchName" placeholder="Search by firm name" class="form-control mb-2">
+      <input type="text" [(ngModel)]="searchAddress" placeholder="Search by address" class="form-control mb-2">
+      <button (click)="searchFirms()" class="btn btn-primary">Search</button>
+      <button (click)="clearSearch()" class="btn btn-secondary ml-2">Clear</button>
+    </div>
+
+    <h3>List of Firms</h3>
+    <div class="firm-list">
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th (click)="sortBy('name')">
+              Firm Name
+              <span *ngIf="sortField === 'name'" class="sort-arrow">
+                <span *ngIf="sortAscending">&#9650;</span> <!-- Upward arrow -->
+                <span *ngIf="!sortAscending">&#9660;</span> <!-- Downward arrow -->
+              </span>
+            </th>
+            <th (click)="sortBy('address')">
+              Address
+              <span *ngIf="sortField === 'address'" class="sort-arrow">
+                <span *ngIf="sortAscending">&#9650;</span> <!-- Upward arrow -->
+                <span *ngIf="!sortAscending">&#9660;</span> <!-- Downward arrow -->
+              </span>
+            </th>
+            <th>Decorators</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let firm of filteredFirms">
+            <td>
+              <!-- Firm name is clickable -->
+              <a href="javascript:void(0)" (click)="onFirmClick(firm)" class="firm-link">
+                {{ firm.name }}
+              </a>
+            </td>
+            <td>{{ firm.address }}</td>
+            <td>
+              <ul>
+                <li *ngFor="let decorator of firm.decorator_list">
+                  {{ decorator }}
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</body>
+</html>

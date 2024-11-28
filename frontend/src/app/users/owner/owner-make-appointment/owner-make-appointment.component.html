@@ -1,0 +1,34 @@
+<div class="container mt-5">
+  <h2>Your Current Appointments</h2>
+
+  <!-- If no appointments found -->
+  <div *ngIf="appointments.length === 0">
+    <p>You have no appointments currently.</p>
+  </div>
+
+  <!-- Table displaying current appointments -->
+  <div *ngIf="appointments.length > 0">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Appointment Date</th>
+          <th>Creation Date</th>
+          <th>Company</th>
+          <th>Requested Services</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let appointment of appointments">
+          <td>{{ appointment.date }}</td>
+          <td>{{ appointment.schedulingDate }}</td>
+          <td>{{ appointment.firm.name }}</td>  <!-- Access the nested firm name -->
+          <td>
+            <ul>
+              <li *ngFor="let service of appointment.services">{{ service }}</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
